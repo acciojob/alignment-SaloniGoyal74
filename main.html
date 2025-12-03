@@ -3,11 +3,109 @@
 <html>
 
 <head>
+	<title>HTML Assignment 3</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		#table-1, #table-2, #table-3{
+			border:1px solid black;
+			border-spacing: 1px;	
+		}
+		#table-2, #table-3{
+			border-collapse: collapse;
+		}
+
+		#r1{
+			background-color:green;
+		}
+
+		#r3{
+			background-color:blue;
+		}
+		
+		td{
+			border:1px solid black;
+			padding: 1px;
+			border-spacing: 30px;
+			border-collapse: collapse;
+		}
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<h1 style="text-align:center;">HTML Assignment #3</h1>
+	
+	<table class="middle" id="table-1">
+		<tr>
+			<td id="T11">left</td>
+			<td id="T12">center</td>
+			<td id="T13">right</td>
+		</tr>
+
+		<tr class="center">
+			<td>left</td>
+			<td>center</td>
+			<td class="right">right</td>
+		</tr>
+
+		<tr>
+			<td>left</td>
+			<td>center</td>
+			<td>right</td>
+		</tr>
+	</table>
+
+	<br>
+	
+	<table class="middle" id="table-2">
+		<tr>
+			<td id="t21" colspan="6"></td>
+		</tr>
+		<tr>
+			<td rowspan="4"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td rowspan="2" colspan="3"></td>
+			<td></td>
+			
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="6"></td>
+		</tr>
+	</table>
+	<br>
+	<table class="middle" id="table-3">
+		<tr id=r1>
+			<td colspan="3"></td>
+		</tr>
+		<tr id=r2>
+			<td></td>
+			<td id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"</td>
+			<td></td>
+		</tr>
+		<tr id=r3>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
